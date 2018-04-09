@@ -1,14 +1,19 @@
+import Breadcrumb from './components/Breadcrumb.vue'
 import Button from './components/Button.vue'
+import Style from './components/Style.vue'
 
 // Install the components
 export function install (Vue) {
   Vue.component('ov-button', Button)
+  Vue.component('ov-breadcrumb', Breadcrumb)
+  Vue.use(Style)
   /* -- Add more components here -- */
 }
 
 // Expose the components
 export {
   Button,
+  Breadcrumb,
   /* -- Add more components here -- */
 }
 
