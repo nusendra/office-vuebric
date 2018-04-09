@@ -1,16 +1,13 @@
-import Test from './components/Test.vue'
 import Button from './components/Button.vue'
 
 // Install the components
 export function install (Vue) {
-  Vue.component('test', Test)
   Vue.component('ov-button', Button)
   /* -- Add more components here -- */
 }
 
 // Expose the components
 export {
-  Test,
   Button,
   /* -- Add more components here -- */
 }

@@ -29,6 +29,7 @@
   "bugs": {
     "url": "https://github.com/https://github.com/nusendra/office-vuebric/issues"
   },
+  "postcss": {},
   "homepage": "https://github.com/https://github.com/nusendra/office-vuebric#readme",
   "devDependencies": {
     "babel-core": "^6.0.0",
