@@ -11,7 +11,7 @@ export function install (Vue) {
 // Expose the components
 export {
   Test,
-  Button
+  Button,
   /* -- Add more components here -- */
 }
 
