@@ -1,4 +1,6 @@
-# office-vuebric
+<h1>Attention!! This Package is still Development mode. Not ready for production </h1>
+
+<div style="text-align:center"><img src="https://farm1.staticflickr.com/802/41338549771_c82551a219.jpg"/></div>
 
 [![npm](https://img.shields.io/npm/v/office-vuebric.svg) ![npm](https://img.shields.io/npm/dm/office-vuebric.svg)](https://www.npmjs.com/package/office-vuebric)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
