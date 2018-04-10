@@ -1,7 +1,7 @@
 {
   "name": "office-vuebric",
   "description": "Office UI Fabric components for Vue.js / Nuxt.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "nusendra",
     "email": "admin@nusendra.com"
