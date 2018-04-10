@@ -1,12 +1,14 @@
+import Style from './components/Style.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
 import Button from './components/Button.vue'
-import Style from './components/Style.vue'
+import TextField from './components/TextField.vue'
 
 // Install the components
 export function install (Vue) {
+  Vue.use(Style)
   Vue.component('ov-button', Button)
   Vue.component('ov-breadcrumb', Breadcrumb)
-  Vue.use(Style)
+  Vue.component('ov-textfield', TextField)
   /* -- Add more components here -- */
 }
 
@@ -14,6 +16,7 @@ export function install (Vue) {
 export {
   Button,
   Breadcrumb,
+  TextField,
   /* -- Add more components here -- */
 }
 
