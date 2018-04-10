@@ -1,1 +1,4 @@
 node_modules/
+ui.css
+component.css
+dist/index.html
