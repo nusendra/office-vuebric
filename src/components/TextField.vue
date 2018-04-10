@@ -1,29 +1,36 @@
 <template>
   <div class="ms-TextField ms-TextField--placeholder">
-    <input class="ms-TextField-field" type="text" v-model="text" :placeholder="placeholder">
+    <input v-model="text" 
+      :placeholder="placeholder" 
+      :style="isError ? 'border: 1px solid #ff5a5a;' : ''" 
+      @blur="leave" 
+      class="ms-TextField-field" type="text" 
+    >
+    <small v-if="isError">{{ errorMessage }}</small>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    placeholder: {
-      type: String,
-      default: '',
-    },
-    value: {
-      type: String,
-      default: '',
-    },
-  },
+  props: ['placeholder', 'value', 'isValidate', 'errorMessage'],
   data () {
     return {
       text: this.value,
+      isError: true,
     }
   },
   watch: {
     text (val) {
       this.$emit('input', val)
+      this.errorShow()
+    },
+  },
+  methods: {
+    errorShow () {
+      this.text === '' ? this.isError = true : this.isError = false
+    },
+    leave () {
+      this.errorShow()
     },
   },
 }
@@ -276,5 +283,25 @@ export default {
   min-width: 260px;
   padding-top: 6px;
   overflow: auto
+}
+
+.ms-Label {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  color: #333;
+  font-size: 12px;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 0
+}
+
+.ms-Label.is-required:after {
+  content: " *";
+  color: #a80000
+}
+
+.ms-Label.is-disabled {
+  color: #a6a6a6
 }
 </style>

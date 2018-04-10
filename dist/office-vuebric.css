@@ -458,3 +458,20 @@
   padding-top: 6px;
   overflow: auto
 }
+.ms-Label {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  color: #333;
+  font-size: 12px;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px 0
+}
+.ms-Label.is-required:after {
+  content: " *";
+  color: #a80000
+}
+.ms-Label.is-disabled {
+  color: #a6a6a6
+}

@@ -1,12 +1,14 @@
 // import Style from './components/Style.vue'
 import Button from './components/Button.vue'
 import TextField from './components/TextField.vue'
+import Form from './components/Form.vue'
 
 // Install the components
 export function install (Vue) {
   // Vue.use(Style)
   Vue.component('ov-button', Button)
   Vue.component('ov-textfield', TextField)
+  Vue.component('ov-form', Form)
   /* -- Add more components here -- */
 }
 
@@ -14,6 +16,7 @@ export function install (Vue) {
 export {
   Button,
   TextField,
+  Form,
   /* -- Add more components here -- */
 }
 
