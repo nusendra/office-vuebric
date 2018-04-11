@@ -6,7 +6,7 @@
       @blur="leave" 
       class="ms-TextField-field" type="text" 
     >
-    <small v-if="isError">{{ errorMessage }}</small>
+    <small v-if="isError" style="color: #ff5a5a;">{{ errorMessage }}</small>
   </div>
 </template>
 

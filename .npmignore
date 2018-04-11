@@ -1,0 +1,7 @@
+node_modules/
+ui.css
+component.css
+dist/index.html
+config/
+src/
+index.js
